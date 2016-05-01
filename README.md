@@ -1,5 +1,5 @@
 <br>
-##点我！点我！点我！http://wangke.tech
+##想看一下效果？[点我！点我！点我！](http://wangke.tech) :[http://wangke.tech/](http://wangke.tech/)
 <br>
 ##部署方式
    ```Nginx <--> gunicorn <--> blog <--> sqlite```
