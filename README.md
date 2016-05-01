@@ -1,3 +1,4 @@
+<br>
 ##http://wangke.tech
 <br>
 ##部署方式
@@ -12,11 +13,14 @@
         gunicore
 ###总结一下用到的服务有：
 
-Nginx：高性能Web服务器+负责反向代理；
+   ```
+   Nginx：高性能Web服务器+负责反向代理；
 
-gunicorn：高性能WSGI服务器；
+   gunicorn：高性能WSGI服务器；
 
-gevent：把Python同步代码变成异步协程的库；
+   gevent：把Python同步代码变成异步协程的库；
 
-Supervisor：监控服务进程的工具
-
+   Supervisor：监控服务进程的工具
+   
+   fabric: 自动化部署工具
+   ```
