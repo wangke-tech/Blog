@@ -1,12 +1,12 @@
 #部署方式
 ##Nginx <--> gunicorn <--> blog <--> sqlite
 ##Nginx负责分发请求：
-      ###Browser
+        Browser
            |
            |  url = /static/
-      ### Nginx
+         Nginx
            |  url = /
            |
-      ###gunicore
+        gunicore
 
 #http://wangke.tech
