@@ -8,7 +8,7 @@ def home(Request):
     post_list = Article.objects.all()
     return render(Request,'home.html',{'post_list':post_list})
 def test(Request):
-    return render(Request,'test.html',{'current_time':datetime.now()})
+    return render(Request,'test.html')
 def details(Request,id):
     try:
         post = Article.objects.get(id=str(id))
