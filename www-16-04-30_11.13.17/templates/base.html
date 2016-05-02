@@ -8,59 +8,49 @@
 		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
 		<link rel="stylesheet" href="http://picturebag.qiniudn.com/blog.css">
                 <link rel="stylesheet" href="http://picturebag.qiniudn.com/monokai.css">
-                <style type="text/css">
-                    html,body{height:100%;/*设定body高度为100%,达到视窗可视大小*/background:#FFF;}
-                    .wrapper{/*设定高度最小为100%，如果内容区块很多，可以长大*/min-height:100%;/*位置设置为relarive，作为footer区块位置的参考*/position:relative;}
-                    .center{padding-bottom:40px;height:80px;}
-                    .footer{/*设定footer宽度和高度*/width:100%;height:30px;/*设定footer绝对位置在底部*/position:absolute;bottom:0;}
-                </style>
 		{% block header %}
 		{% endblock %}
 	</head>
 	
 	<body>
 	<div id="wrapper">
-		<div id="center" class="pure-g">
-		
-			<div id="lefter" class="sidebar pure-u-1 pure-u-md-1-4">
-				<div class="header">
-					<h1 class="brand-title">王珂</h1>
-					<br><br>
-					<h2 class="brand-tagline">cn_wk@hotmail.com</h2>
-					<br>
-					<nav class="nav">
-						<ul class="nav-list">
-							<li class="nav-item">
-								<a class="button-success pure-button" href="/">主页</a> 
-							</li>
-							<li class="nav-item">
-								<a class="pure-button" href="https://github.com/wangke-tech">Github</a>
-	                   				</li>
-	                   	 			<li class="nav-item">
-	                        				<a class="pure-button" href="http://blog.csdn.net/cn_wk">CSDN</a>
-	                   	 			</li>
-	                   	 		</ul>
-            				</nav>
-			    </div>
-			</div>
+	    <div id="center" class="pure-g">
+	        <div id="lefter" class="sidebar pure-u-1 pure-u-md-1-4">
+		    <div class="header">
+		        <h1 class="brand-title">王珂</h1>
+			<br><br>
+		        <h2 class="brand-tagline">cn_wk@hotmail.com</h2>
+			<br>
+			<nav class="nav">
+			<ul class="nav-list">
+			    <li class="nav-item">
+			        <a class="button-success pure-button" href="/">主页</a> 
+			    </li>
+			    <li class="nav-item">
+			        <a class="pure-button" href="https://github.com/wangke-tech">Github</a>
+	                    </li>
+	                    <li class="nav-item">
+	                    	<a class="pure-button" href="http://blog.csdn.net/cn_wk">CSDN</a>
+	                    </li>
+	                 </ul>
+            		</nav>
+		     </div><!-- end header -->
+	        </div><!--end lefter -->
 			
-			<div id="righter"  class="content pure-u-1 pure-u-md-3-4">
-				<div>
-			          	{% block content %}
-			          	{% endblock %}
-				</div>
-			</div>
+	        <div id="righter"  class="content pure-u-1 pure-u-md-3-4">
+		    <div>{% block content %}{% endblock %}
+		    </div>
+		</div><!-- end righter -->
 			
-		</div>
-		
-			          	<div id="footer" class="footer">
-				          	<div class="pure-menu pure-menu-horizontal pure-menu-open">
-				          		<ul>
-								<li><a href="mailto:cn_wk@hotmail.com">Contact Me</a></li>
-								<li><a href="https://github.com/wangke-tech/">GitHub</a></li>
-							</ul>
-						</div>
-					</div>
-        </div>
-	</body>
+	    </div><!-- end center -->
+	    <div id="footer" class="footer">
+	        <div class="pure-menu pure-menu-horizontal pure-menu-open">
+		    <ul>
+		        <li><a href="mailto:cn_wk@hotmail.com">Contact Me</a></li>
+		        <li><a href="https://github.com/wangke-tech/">GitHub</a></li>
+		    </ul>
+	        </div>
+	    </div><!-- end footer -->
+    </div><!-- end wrapper -->
+    </body>
 </html>
