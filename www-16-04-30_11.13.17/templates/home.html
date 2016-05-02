@@ -1,17 +1,26 @@
 {% extends "base.html" %}
-
+{% block header%}
+<link rel="Stylesheet" type="text/css" href="http://static.blog.csdn.net/skin/default/css/style.css?v=1.1">
+<style type="text/css">
+body{background:#FFF;}
+</style>
+{% endblock %}
 {% block content %}
 <div class="posts">
-	{% for post in post_list %}
-		<section class="post">
-		<table>
-		    <tr>    
-		<td class="post-meta">
+            {% for post in post_list %}
+
+             <section class="post">
+	        <div class="list_item list_view">    
+	            <div class="article_title">
 		        <a class="post-category post-category-js" href="#">{{ post.category }}</a>&nbsp;&nbsp;
                         <a href="{% url 'details' id=post.id %}">{{ post.title }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                       </td><td> {{ post.date_time |date:'Y /m /d' }}
-		    </td>
-</td></table>
+                    </div>
+		    <div class="article_manage">
+			    <span class="link_postdate"> {{ post.date_time |date:'Y /m /d' }}</span>
+			    <span class="link_view">阅读次数</span>
+			    <span class="link_comments">评论次数</span>
+		    </div>
+                </div>
                   
                            
 		</section>
